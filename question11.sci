@@ -30,10 +30,13 @@ function numeros = geradorUniformeCongruencial(semente, a, c, m, n)
     end
 endfunction
 
-// Parâmetros baseados na implementação do ANSI C rand()
+/* 
+Parâmetros baseados na implementação cc65 (Compilador de C)
+https://en.wikipedia.org/wiki/Linear_congruential_generator
+*/
 
-a = 1664525;              
-c = 1013904223;            
+a = 16843009;              
+c = 826366247;            
 m = 2^32;                 
 
 // a) São diferentes.
