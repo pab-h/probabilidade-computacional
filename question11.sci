@@ -33,6 +33,14 @@ endfunction
 /* 
 Parâmetros baseados na implementação cc65 (Compilador de C)
 https://en.wikipedia.org/wiki/Linear_congruential_generator
+
+Já que m tem o formato de 2^b, então:
+
+1. a mod 4 = 1;
+2. c deve ser ímpar.
+
+para garantir ciclos satisfatórios.
+
 */
 
 a = 16843009;              
